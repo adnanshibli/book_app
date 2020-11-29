@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Searches page</title>
+    <link rel="stylesheet" href="../styles/base.css">
+</head>
+
+<body>
+    <header>
+        <nav id="myNav">
+            <h1>Best Books!</h1>
+            <div id="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+        <div id="optionsCont" class="optionsContainer hide">
+            <a  href="/">
+                <h2>Home</h2>
+            </a>
+            <a  href="/searches/new">
+                <h2>Searsh the Google Books API</h2>
+               
+            </a> 
+
+        </div>
+        <h1 class="headerText">Search by Title or Author</h1>
+    </header>
+
+
+
+        <form action="/searches" method="POST">
+            
+               <input class="textInput" type="search" name="query" placeholder="Enter a Title or Author"/> 
+
+               <div>
+                   <label for="title">Title</label><input id="title" type="radio" name="type" value="intitle" />
+
+               </div>
+               <div>
+                <label for="author">Author</label><input id="author" type="radio" name="type" value="inauthor" />
+
+            </div>
+
+               
+               <input class="submitButton" type="submit" value="Search the Google book API"/>
+            
+        </form>
+        
+    
+    <script src="../script.js"></script>
+    <script src="https://kit.fontawesome.com/d24b63793e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
