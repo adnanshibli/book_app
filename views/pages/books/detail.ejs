@@ -6,36 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Home page</title>
-    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="../../styles/base.css">
 </head>
 
 <body>
     <header>
-        <%- include('../layout/header') %>
-        <h1 class="headerText">  
-            <%= books.length %> Saved books    
-        </h1>
+        <%- include('../../layout/header') %>
+        
     </header>
 
     <div class="booksContainer">
-        
-        <% books.forEach( book=> { %>
+
             <div id= <%= book.id %> >
                 <img src= <%= book.image_url %>  />
                 <h3> <%= book.title %> </h3>
                 <h4><%= book.author %></h4>
-                <p class="isbn"><%= book.isbn %>   </p>
+                <p><%= book.isbn %>   </p>
+                <p><%= book.description %> </p>
             </div>
-
-       <% }) %>
-
-          
+  
        </div>
 
 
     
     
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
     <script src="https://kit.fontawesome.com/d24b63793e.js" crossorigin="anonymous"></script>
 </body>
 
