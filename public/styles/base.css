@@ -139,43 +139,45 @@ form input.textInput{
   align-items: center;
   padding:10px 20px;
   margin: 20px auto;
-  width: 80%;
-  height: 95vh;
-  
+  width: 80%; 
   background-color: #cecdce;
   box-shadow: 1px 2px 3px 2px gray;
   
 }
 .booksContainer div img{
   width: 50%;
-  height: 250px;
-  margin: 50px auto;
+  height: 200px;
+  margin: 25px auto;
   margin-bottom: 20px;
   border:2px solid #fffeff;
   box-shadow: 1px 2px 3px 2px gray;
   
 }
 .booksContainer h3{
-  font-size: 1.7em;
+  font-size: 1.6em;
   color: #fffeff;
   text-shadow: 1px 2px 3px gray;
   margin:10px auto;
   text-align: center;
-  max-height: 75px;
-  overflow-y: auto;
 }
 .booksContainer div p.desc{
-  max-height: 300px;
+
   width: 85%;
   line-height: 20px;
   margin-top: 10px;
-  overflow-y: auto;
   text-align: center;
   margin-bottom: 15px;
+}
+.booksContainer div p.isbn {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 15px;
+
 }
 .booksContainer h4{
   font-style: italic;
   text-shadow: 1px 2px 3px rgb(187, 181, 181);
+  margin-bottom: 15px;
   
 }
 
@@ -189,4 +191,14 @@ form input.textInput{
   align-items: center;
   padding:20px;
   
+}
+button.addBook{
+  background-color: black;
+  color: white;
+  width: 82%;
+  padding:12px;
+  margin: auto;
+  outline: none;
+  font-size: 1.1em;
+  margin:20px auto;
 }

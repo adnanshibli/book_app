@@ -1,7 +1,7 @@
 {
   "name": "book_app",
   "version": "1.0.0",
-  "description": "",
+  "description": "**Author**: Your Name Goes Here **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,19 +9,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adnanshibli/book_app.git"
+    "url": "git+https://github.com/MHD22/book_app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/adnanshibli/book_app/issues"
+    "url": "https://github.com/MHD22/book_app/issues"
   },
-  "homepage": "https://github.com/adnanshibli/book_app#readme",
+  "homepage": "https://github.com/MHD22/book_app#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "pg": "^8.5.1",
     "superagent": "^6.1.0"
   }
 }
