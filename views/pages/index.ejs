@@ -11,26 +11,33 @@
 
 <body>
     <header>
-        <nav id="myNav">
-            <h1>Best Books!</h1>
-            <div id="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
-        <div id="optionsCont" class="optionsContainer hide">
-            <a  href="/">
-                <h2>Home</h2>
-            </a>
-            <a  href="/searches/new">
-                <h2>Searsh the Google Books API</h2>
-               
-            </a> 
-
-        </div>
-        <h1 class="headerText">Hello world</h1>
+        <%- include('../layout/header') %>
+        <h1 class="headerText">  
+            <%= books.length %> Saved books    
+        </h1>
     </header>
+
+    <div class="booksContainer">
+        
+        <% books.forEach( book=> { %>
+                <form action="/details/<%= book.id %>" method="GET" >
+                    <div id= <%= book.id %> >
+                        <img src= <%= book.image_url %>  />
+                        <h3> <%= book.title %> </h3>
+                        <h4><%= book.author %></h4>
+                        <p class="isbn"><%= book.isbn %>   </p>
+                        <input type="submit" class="blackButton" value="View Details" >
+                    </div>
+                
+                </form>
+            
+
+       <% }) %>
+
+          
+    </div>
+
+
     
     
     <script src="script.js"></script>
