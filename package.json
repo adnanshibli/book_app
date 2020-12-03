@@ -1,6 +1,10 @@
 {
   "name": "book_app",
   "version": "1.0.0",
+<<<<<<< HEAD
+=======
+  "description": "**Author**: Your Name Goes Here **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)",
+>>>>>>> 667a853587a4b348325361ec63a7a7b701e0f9ed
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -8,23 +12,28 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adnanshibli/book_app.git"
+    "url": "git+https://github.com/MHD22/book_app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/adnanshibli/book_app/issues"
+    "url": "https://github.com/MHD22/book_app/issues"
   },
-  "homepage": "https://github.com/adnanshibli/book_app#readme",
+  "homepage": "https://github.com/MHD22/book_app#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+<<<<<<< HEAD
     "pg": "^8.5.1",
     "pgsql": "^1.0.0",
     "postgres": "^1.0.2",
+=======
+    "method-override": "^3.0.0",
+    "pg": "^8.5.1",
+>>>>>>> 667a853587a4b348325361ec63a7a7b701e0f9ed
     "superagent": "^6.1.0"
   },
   "devDependencies": {},
